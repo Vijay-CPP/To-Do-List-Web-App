@@ -1,5 +1,5 @@
 //jshint esversion:6
-
+require("dotenv").config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const date = require(__dirname + "/date.js");
@@ -19,7 +19,7 @@ mongoose.pluralize(null);
 
 // const localUri = "mongodb://localhost:27017/";
 const dbIntigration = process.env.DB_USERNAME + ":" + process.env.DB_PASSWORD;
-
+const dbName = "TodoListDB";
 const uri = "mongodb+srv://" + dbIntigration + "@cluster0.w4izs.mongodb.net/";
 mongoose.connect(uri + dbName);
 
