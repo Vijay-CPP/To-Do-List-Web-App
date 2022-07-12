@@ -150,7 +150,7 @@ app.listen(process.env.PORT || 3000, function () {
 
 
 
-var https = require("https");
-setInterval(function() {
-    https.get("https://to-do-list-vijay-cpp.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
+// var https = require("https");
+// setInterval(function() {
+//     https.get("https://to-do-list-vijay-cpp.herokuapp.com");
+// }, 300000); // every 5 minutes (300000)
